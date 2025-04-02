@@ -1,0 +1,21 @@
+[gd_scene load_steps=6 format=3 uid="uid://iy8qn7sqxku7"]
+
+[ext_resource type="Script" uid="uid://c1wlqo3fxiu0a" path="res://scripts/Player/Player.gd" id="1_cyojo"]
+[ext_resource type="PackedScene" uid="uid://dbjf1kmt18r3y" path="res://scenes/Player/camera.tscn" id="2_1kbk7"]
+[ext_resource type="PackedScene" uid="uid://df4rih18qtdsq" path="res://scenes/ui/crosshair.tscn" id="3_c4h5g"]
+[ext_resource type="PackedScene" uid="uid://cs73s6kid44uu" path="res://scenes/ui/pause_menu.tscn" id="4_uiqp4"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_kk62l"]
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_cyojo")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_kk62l")
+
+[node name="Camera" parent="." instance=ExtResource("2_1kbk7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.615691, -0.415327)
+
+[node name="Crosshair" parent="." instance=ExtResource("3_c4h5g")]
+
+[node name="PauseMenu" parent="." instance=ExtResource("4_uiqp4")]
