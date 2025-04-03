@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=3 uid="uid://bbof7bmwujr0s"]
+
+[ext_resource type="Texture2D" uid="uid://cpits6q3g4rja" path="res://assets/textures/Sky/skyDay.png" id="1_u7hef"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_0657j"]
+panorama = ExtResource("1_u7hef")
+
+[sub_resource type="Sky" id="Sky_0hg15"]
+sky_material = SubResource("PanoramaSkyMaterial_0657j")
+
+[sub_resource type="Environment" id="Environment_61x2x"]
+background_mode = 2
+sky = SubResource("Sky_0hg15")
+
+[node name="Sky" type="WorldEnvironment"]
+environment = SubResource("Environment_61x2x")

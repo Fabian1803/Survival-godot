@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqy8mytixwrty"]
+
+[ext_resource type="Script" uid="uid://bad010ylogbai" path="res://scripts/world/biomes/grass.gd" id="1_04gsf"]
+[ext_resource type="Texture2D" uid="uid://buox2yxlr06ft" path="res://assets/textures/grass.png" id="1_gr6qb"]
+
+[node name="Grass" type="Node3D"]
+script = ExtResource("1_04gsf")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0.391538, 0)
+billboard = 2
+texture = ExtResource("1_gr6qb")
+region_enabled = true
+region_rect = Rect2(0, 0, 14.96, 19.3942)

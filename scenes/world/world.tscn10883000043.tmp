@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dp5mtevrfjb8p"]
+[gd_scene load_steps=4 format=3 uid="uid://dp5mtevrfjb8p"]
 
 [ext_resource type="PackedScene" uid="uid://iy8qn7sqxku7" path="res://scenes/Player/player.tscn" id="1_dphjl"]
 [ext_resource type="Script" uid="uid://bxk24e4b33g6v" path="res://scripts/world/world_generator.gd" id="1_sl2e5"]
 [ext_resource type="PackedScene" uid="uid://dtlg3fgt486is" path="res://scenes/world/world_generator.tscn" id="2_sl2e5"]
-[ext_resource type="PackedScene" uid="uid://bbof7bmwujr0s" path="res://scenes/world/biomes/Sky/Sky.tscn" id="4_6m72w"]
 
 [node name="World" type="Node3D"]
 script = ExtResource("1_sl2e5")
@@ -12,5 +11,3 @@ script = ExtResource("1_sl2e5")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.754291, 0)
 
 [node name="WorldGenerator" parent="." instance=ExtResource("2_sl2e5")]
-
-[node name="Sky" parent="." instance=ExtResource("4_6m72w")]
